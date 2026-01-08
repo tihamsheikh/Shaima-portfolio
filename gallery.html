@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Shaimin Sultana</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Premium CSS -->
+    <link href="style.css" rel="stylesheet">
+    <style>
+        .gallery-item {
+            margin-bottom: 8rem;
+        }
+
+        .gallery-card {
+            border-radius: 2rem;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .gallery-img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            transition: transform 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+        }
+
+        .gallery-card:hover .gallery-img {
+            transform: scale(1.05);
+        }
+
+        .detail-view {
+            height: 400px;
+            margin-top: 50px;
+        }
+
+        .whole-view {
+            height: 600px;
+        }
+
+        .gallery-label {
+            position: absolute;
+            bottom: 2rem;
+            left: 2rem;
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(10px);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            color: white;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .gallery-title-section {
+            padding: 120px 0 60px 0;
+            background: radial-gradient(circle at bottom center, rgba(99, 102, 241, 0.05) 0%, transparent 70%);
+        }
+
+        @media (max-width: 991px) {
+
+            .whole-view,
+            .detail-view {
+                height: 400px;
+            }
+
+            .detail-view {
+                margin-top: 20px;
+            }
+
+            .gallery-item {
+                margin-bottom: 4rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <section class="navigation-section sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark glass-card mx-auto my-4" style="max-width: 95%;">
+            <div class="container">
+                <a class="navbar-brand fs-2" href="index.html">SHAIMIN SULTANA</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link fs-5" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link fs-5 active" href="gallery.html">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link fs-5" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Header Section -->
+    <section class="gallery-title-section text-center animate-fade-in">
+        <div class="container">
+            <span class="badge bg-primary px-3 py-2 rounded-pill mb-3"
+                style="font-weight: 500; font-size: 0.8rem; letter-spacing: 1px;">CREATIVE ARCHIVE</span>
+            <h1 class="display-2 fw-bold text-gradient mb-3">Details of My Craft</h1>
+            <p class="lead text-white-50 fs-4 mx-auto" style="max-width: 800px;">Exploring the intricate craftsmanship
+                and the eternal beauty of ribbon flowers through macro perspectives.</p>
+        </div>
+    </section>
+
+    <!-- Gallery Content -->
+    <main class="container py-5">
+
+        <!-- Piece 1 -->
+        <div class="row align-items-center gallery-item animate-fade-in">
+            <div class="col-lg-7">
+                <div class="gallery-card whole-view shadow-premium mb-4 mb-lg-0">
+                    <img src="images/one.jpg" class="gallery-img" alt="Eternal Flower Whole View">
+                    <span class="gallery-label">Whole View</span>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="gallery-card detail-view shadow-premium">
+                    <img src="images/detail_1.png" class="gallery-img" alt="Ribbon Detail Close-up">
+                    <span class="gallery-label">Intimate Detail</span>
+                </div>
+                <div class="mt-4 ps-lg-4">
+                    <h3 class="h3 text-white fw-bold mb-3">Indigo Silk Rose</h3>
+                    <p class="text-white-50 fs-5" style="line-height: 1.7;">Showing the fine silk texture and delicate
+                        hand-stitching with silver thread. Every petal is a testament to care and slowness.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Piece 2 (Alternated) -->
+        <div class="row align-items-center gallery-item animate-fade-in" style="flex-direction: row-reverse;">
+            <div class="col-lg-7">
+                <div class="gallery-card whole-view shadow-premium mb-4 mb-lg-0">
+                    <img src="images/two.jpg" class="gallery-img" alt="Eternal Flower Whole View">
+                    <span class="gallery-label">Whole View</span>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="gallery-card detail-view shadow-premium">
+                    <img src="images/detail_2.png" class="gallery-img" alt="Ribbon Detail Close-up">
+                    <span class="gallery-label">Intimate Detail</span>
+                </div>
+                <div class="mt-4 pe-lg-4 text-lg-end">
+                    <h3 class="h3 text-white fw-bold mb-3">Pastel Harmony</h3>
+                    <p class="text-white-50 fs-5" style="line-height: 1.7;">A focus on the folded edges of satin
+                        ribbons. The soft pink and cream tones create a gentle language of femininity and intimacy.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Piece 3 -->
+        <div class="row align-items-center gallery-item animate-fade-in">
+            <div class="col-lg-7">
+                <div class="gallery-card whole-view shadow-premium mb-4 mb-lg-0">
+                    <img src="images/three.jpg" class="gallery-img" alt="Eternal Flower Whole View">
+                    <span class="gallery-label">Whole View</span>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="gallery-card detail-view shadow-premium">
+                    <img src="images/detail_3.png" class="gallery-img" alt="Ribbon Detail Close-up">
+                    <span class="gallery-label">Intimate Detail</span>
+                </div>
+                <div class="mt-4 ps-lg-4">
+                    <h3 class="h3 text-white fw-bold mb-3">Beaded Bloom</h3>
+                    <p class="text-white-50 fs-5" style="line-height: 1.7;">Showcasing delicate beadwork and intricate
+                        embroidery at the heart of the flower. Luxury textile art that holds time and memory.</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="py-5 text-center border-top border-secondary border-opacity-10">
+        <div class="container">
+            <p class="text-white">&copy; 2026 Shaima Portfolio | All Rights Reserved.</p>
+            <div id="timeStamp" class="small text-primary opacity-75"></div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById("timeStamp").textContent = new Date().toLocaleDateString('en-US', {
+            weekday: 'long',
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+    </script>
+</body>
+
+</html>

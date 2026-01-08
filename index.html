@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaima | Digital Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Premium CSS -->
+    <link href="style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <section class="navigation-section sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark glass-card mx-auto my-4" style="max-width: 95%;">
+            <div class="container">
+                <a class="navbar-brand fs-2" href="index.html">SHAIMIN SULTANA</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link fs-5 active" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link fs-5" href="gallery.html">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link fs-5" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero-section py-5">
+        <div class="hero-glow"></div>
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-7 animate-fade-in">
+                    <h1 class="hero-title text-gradient mb-4">Capturing Nature's <br> Silent Poetry</h1>
+                    <p class="lead text-white-50 mb-5 fs-3" style="font-weight: 300;">I craft eternal flowers that bloom
+                        forever, weaving memory and fabric into delicate art.</p>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a href="gallery.html" class="btn btn-premium">Explore Gallery</a>
+                        <a href="contact.html" class="btn btn-premium-outline">Get in Touch</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-8 mx-auto">
+                    <div class="glass-card p-3 shadow-premium">
+                        <img src="images/four.jpg" class="card-img-top rounded-4" alt="Eternal Flower Craft"
+                            style="height: 500px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Concept & Inspiration Section -->
+    <section class="concept-section py-5 my-5">
+        <div class="container">
+            <div class="glass-card p-5 animate-fade-in shadow-lg">
+                <div class="concept-inspiration">
+                    <h2 class="display-4 fw-bold mb-5 text-gradient">Concept & Inspiration</h2>
+
+                    <p class="lead text-white mb-5 fs-2" style="font-weight: 300; line-height: 1.5;">
+                        My work is centered around the idea of the <strong>eternal flower</strong> — a bloom that
+                        quietly holds time, memory, and touch.
+                    </p>
+
+                    <div class="row g-5">
+                        <div class="col-lg-6">
+                            <div class="p-4 rounded-4 h-100"
+                                style="background: rgba(255,255,255,0.02); border-left: 4px solid var(--primary);">
+                                <h3 class="h4 text-white mb-3 fw-bold">Why flowers?</h3>
+                                <p class="text-white-50 fs-5" style="line-height: 1.8;">
+                                    Flowers mark moments of care and celebration. They bloom briefly, then disappear. By
+                                    recreating them in fabric, I allow them to exist beyond nature’s cycle of fading.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="p-4 rounded-4 h-100"
+                                style="background: rgba(255,255,255,0.02); border-left: 4px solid var(--primary);">
+                                <h3 class="h4 text-white mb-3 fw-bold">Why ribbons?</h3>
+                                <p class="text-white-50 fs-5" style="line-height: 1.8;">
+                                    Ribbons carry softness and movement. Shaped into petals, they become a gentle
+                                    language — expressing femininity, intimacy, and quiet strength.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-5 pt-5 border-top border-secondary border-opacity-25 text-center">
+                        <h3 class="h4 text-primary mb-4 fw-bold uppercase-track">Thematic Essence</h3>
+                        <p class="text-white-50 fs-5 mb-0 mx-auto" style="line-height: 1.8; max-width: 900px;">
+                            Weaving together memory, sustainability, and identity. By transforming textile materials, I
+                            create enduring forms that reflect care and a deep connection to nature.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-2 text-center">
+        <div class="container">
+            <p class="text-white">&copy; 2026 Shaima Portfolio | All Rights Reserved.</p>
+            <div id="timeStamp" class="small text-primary opacity-75"></div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById("timeStamp").textContent = new Date().toLocaleDateString('en-US', {
+            weekday: 'long',
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+    </script>
+</body>
+
+</html>

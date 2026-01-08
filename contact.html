@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Shaimin Sultana</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Premium CSS -->
+    <link href="style.css" rel="stylesheet">
+    <style>
+        .contact-header {
+            padding: 120px 0 60px 0;
+            background: radial-gradient(circle at top center, rgba(99, 102, 241, 0.1) 0%, transparent 70%);
+        }
+
+        .contact-info-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            padding: 40px;
+            height: 100%;
+            transition: all 0.4s ease;
+        }
+
+        .contact-info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .icon-wrapper {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary) 0%, #818cf8 100%);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-right: 20px;
+            flex-shrink: 0;
+            box-shadow: 0 8px 16px -4px rgba(99, 102, 241, 0.3);
+        }
+
+        .info-content h4 {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            margin-bottom: 4px;
+            font-weight: 600;
+        }
+
+        .info-content p {
+            margin-bottom: 0;
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        .spec-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .spec-tag {
+            background: rgba(99, 102, 241, 0.08);
+            border: 1px solid rgba(99, 102, 241, 0.2);
+            padding: 12px;
+            border-radius: 12px;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #c7d2fe;
+        }
+
+        .contact-form-wrapper {
+            background: var(--glass);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            padding: 50px;
+        }
+
+        .social-strip {
+            display: flex;
+            gap: 15px;
+            margin-top: 40px;
+        }
+
+        .social-btn {
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--glass-border);
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 1.2rem;
+        }
+
+        .social-btn:hover {
+            background: var(--primary);
+            border-color: var(--primary);
+            transform: translateY(-5px);
+            color: white;
+            box-shadow: 0 10px 20px -5px rgba(99, 102, 241, 0.4);
+        }
+
+        .btn-premium-lg {
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            letter-spacing: 0.5px;
+        }
+
+        @media (max-width: 768px) {
+            .contact-form-wrapper {
+                padding: 30px;
+            }
+
+            .spec-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <section class="navigation-section sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark glass-card mx-auto my-4" style="max-width: 95%;">
+            <div class="container">
+                <a class="navbar-brand fs-2" href="index.html">My Portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <main>
+        <!-- Header -->
+        <section class="contact-header text-center animate-fade-in">
+            <div class="container">
+                <span class="badge bg-primary px-3 py-2 rounded-pill mb-3"
+                    style="font-weight: 500; font-size: 0.8rem; letter-spacing: 1px;">GET IN TOUCH</span>
+                <h1 class="display-3 fw-bold text-gradient mb-4">Let's Create Together</h1>
+                <p class="lead text-white-50 fs-4 mx-auto" style="max-width: 700px;">
+                    Whether you’re placing an order or dreaming of a custom eternal arrangement, I’m here to bring your
+                    vision to life.
+                </p>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <section class="pb-5">
+            <div class="container">
+                <div class="row g-5">
+                    <!-- Contact Sidebar -->
+                    <div class="col-lg-5 animate-fade-in" style="animation-delay: 0.2s;">
+                        <div class="contact-info-card shadow-lg">
+                            <h2 class="h3 mb-5 fw-bold">Contact Details</h2>
+
+                            <div class="contact-info-item">
+                                <div class="icon-wrapper">✉️</div>
+                                <div class="info-content">
+                                    <h4>Email Address</h4>
+                                    <p>shaimin.eternal@gmail.com</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <div class="icon-wrapper">📱</div>
+                                <div class="info-content">
+                                    <h4>Phone Number</h4>
+                                    <p>+880 1700 000000</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <div class="icon-wrapper">📍</div>
+                                <div class="info-content">
+                                    <h4>Studio Location</h4>
+                                    <p>Uttara Sector 7, Dhaka, BD</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <div class="icon-wrapper">🕒</div>
+                                <div class="info-content">
+                                    <h4>Design Hours</h4>
+                                    <p>Sun – Thu: 10 AM – 8 PM</p>
+                                </div>
+                            </div>
+
+                            <hr class="my-5 border-secondary border-opacity-25">
+
+                            <h3 class="h5 fw-bold mb-4">Occasions We Celebrate</h3>
+                            <div class="spec-grid">
+                                <div class="spec-tag">🌸 Weddings</div>
+                                <div class="spec-tag">🏠 Decor</div>
+                                <div class="spec-tag">🎁 Gifting</div>
+                                <div class="spec-tag">✨ Events</div>
+                            </div>
+
+                            <div class="social-strip">
+                                <a href="#" class="social-btn">📷</a>
+                                <a href="#" class="social-btn">📘</a>
+                                <a href="#" class="social-btn">🎨</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="col-lg-7 animate-fade-in" style="animation-delay: 0.4s;">
+                        <div class="contact-form-wrapper shadow-lg">
+                            <h2 class="h3 fw-bold mb-2">Send a Message</h2>
+                            <p class="text-white-50 mb-5">I'll get back to you within 24 hours to discuss your eternal
+                                blooms.</p>
+
+                            <form id="contactForm">
+                                <div class="row g-4">
+                                    <div class="col-md-6">
+                                        <label class="form-label">Full Name</label>
+                                        <input type="text" class="form-control"  required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Email Address</label>
+                                        <input type="email" class="form-control" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label">Subject</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label">Message</label>
+                                        <textarea class="form-control" rows="5" required></textarea>
+                                    </div>
+                                    <div class="col-12 mt-5">
+                                        <button type="submit" class="btn btn-premium w-100 btn-premium-lg">Send Message
+                                            ✨</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- Secondary CTA -->
+                        <div class="mt-4 p-4 rounded-4"
+                            style="background: rgba(99, 102, 241, 0.05); border: 1px dashed rgba(99, 102, 241, 0.2);">
+                            <div class="d-flex align-items-center justify-content-between flex-wrap gap-3">
+                                <div>
+                                    <h5 class="mb-1 text-white">Need a quick answer?</h5>
+                                    <p class="mb-0 text-muted small">Available now on WhatsApp for rapid consultation.
+                                    </p>
+                                </div>
+                                <a href="#" class="btn btn-outline-light rounded-pill px-4 btn-sm">Chat Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote -->
+        <section class="py-5 text-center">
+            <div class="container py-5">
+                <p class="h2 text-white-50 fw-light italic mx-auto"
+                    style="max-width: 800px; line-height: 1.6; font-family: 'Playfair Display', serif; font-style: italic;">
+                    “May every bloom we craft whisper a story, linger in your heart, and bloom forever in memory.”
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-5 text-center border-top border-secondary border-opacity-10">
+        <div class="container">
+            <p class="text-white">&copy; 2026 Shaima Portfolio | All Rights Reserved.</p>
+            <div id="timeStamp" class="small text-primary opacity-75"></div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById("timeStamp").textContent = new Date().toLocaleDateString('en-US', {
+            weekday: 'long',
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const btn = this.querySelector('button');
+            const originalText = btn.innerHTML;
+            btn.innerHTML = 'Sending...';
+            btn.disabled = true;
+
+            setTimeout(() => {
+                alert('Thank you! Your message has been sent successfully.');
+                btn.innerHTML = originalText;
+                btn.disabled = false;
+                this.reset();
+            }, 1500);
+        });
+    </script>
+</body>
+
+</html>
