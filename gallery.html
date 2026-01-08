@@ -10,6 +10,8 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom Premium CSS -->
     <link href="style.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         .gallery-item {
             margin-bottom: 8rem;
@@ -45,11 +47,11 @@
             position: absolute;
             bottom: 2rem;
             left: 2rem;
-            background: rgba(15, 23, 42, 0.6);
+            background: rgba(var(--bg-body-rgb), 0.6);
             backdrop-filter: blur(10px);
             padding: 0.5rem 1.5rem;
             border-radius: 50px;
-            color: white;
+            color: var(--text-main);
             font-size: 0.9rem;
             letter-spacing: 1px;
             text-transform: uppercase;
@@ -94,6 +96,11 @@
                         <li class="nav-item"><a class="nav-link fs-5" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link fs-5 active" href="gallery.html">Gallery</a></li>
                         <li class="nav-item"><a class="nav-link fs-5" href="contact.html">Contact</a></li>
+                        <li class="nav-item">
+                            <div class="theme-toggle" id="themeToggle" title="Toggle Light/Dark Mode">
+                                <i class="fas fa-sun"></i>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -128,7 +135,7 @@
                     <span class="gallery-label">Intimate Detail</span>
                 </div>
                 <div class="mt-4 ps-lg-4">
-                    <h3 class="h3 text-white fw-bold mb-3">Indigo Silk Rose</h3>
+                    <h3 class="h3 fw-bold mb-3">Indigo Silk Rose</h3>
                     <p class="text-white-50 fs-5" style="line-height: 1.7;">Showing the fine silk texture and delicate
                         hand-stitching with silver thread. Every petal is a testament to care and slowness.</p>
                 </div>
@@ -149,7 +156,7 @@
                     <span class="gallery-label">Intimate Detail</span>
                 </div>
                 <div class="mt-4 pe-lg-4 text-lg-end">
-                    <h3 class="h3 text-white fw-bold mb-3">Pastel Harmony</h3>
+                    <h2 class="h3 fw-bold mb-3">Pastel Harmony</h2>
                     <p class="text-white-50 fs-5" style="line-height: 1.7;">A focus on the folded edges of satin
                         ribbons. The soft pink and cream tones create a gentle language of femininity and intimacy.</p>
                 </div>
@@ -170,7 +177,7 @@
                     <span class="gallery-label">Intimate Detail</span>
                 </div>
                 <div class="mt-4 ps-lg-4">
-                    <h3 class="h3 text-white fw-bold mb-3">Beaded Bloom</h3>
+                    <h3 class="h3 fw-bold mb-3">Beaded Bloom</h3>
                     <p class="text-white-50 fs-5" style="line-height: 1.7;">Showcasing delicate beadwork and intricate
                         embroidery at the heart of the flower. Luxury textile art that holds time and memory.</p>
                 </div>

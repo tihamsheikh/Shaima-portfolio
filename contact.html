@@ -10,6 +10,8 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom Premium CSS -->
     <link href="style.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         .contact-header {
             padding: 120px 0 60px 0;
@@ -17,7 +19,7 @@
         }
 
         .contact-info-card {
-            background: rgba(255, 255, 255, 0.02);
+            background: var(--glass);
             border: 1px solid var(--glass-border);
             border-radius: 24px;
             padding: 40px;
@@ -56,7 +58,7 @@
 
         .info-content p {
             margin-bottom: 0;
-            color: white;
+            color: var(--text-main);
             font-size: 1.1rem;
             font-weight: 500;
         }
@@ -69,7 +71,7 @@
         }
 
         .spec-tag {
-            background: rgba(99, 102, 241, 0.08);
+            background: rgba(99, 102, 241, 0.1);
             border: 1px solid rgba(99, 102, 241, 0.2);
             padding: 12px;
             border-radius: 12px;
@@ -77,7 +79,7 @@
             display: flex;
             align-items: center;
             gap: 10px;
-            color: #c7d2fe;
+            color: var(--primary);
         }
 
         .contact-form-wrapper {
@@ -98,13 +100,13 @@
         .social-btn {
             width: 50px;
             height: 50px;
-            background: rgba(255, 255, 255, 0.03);
+            background: var(--glass);
             border: 1px solid var(--glass-border);
             border-radius: 14px;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
+            color: var(--text-main);
             text-decoration: none;
             transition: all 0.3s ease;
             font-size: 1.2rem;
@@ -151,6 +153,11 @@
                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
                         <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                        <li class="nav-item">
+                            <div class="theme-toggle" id="themeToggle" title="Toggle Light/Dark Mode">
+                                <i class="fas fa-sun"></i>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -241,7 +248,7 @@
                                 <div class="row g-4">
                                     <div class="col-md-6">
                                         <label class="form-label">Full Name</label>
-                                        <input type="text" class="form-control"  required>
+                                        <input type="text" class="form-control" required>
                                     </div>
                                     <div class="col-md-6">
                                         <label class="form-label">Email Address</label>
@@ -265,14 +272,14 @@
 
                         <!-- Secondary CTA -->
                         <div class="mt-4 p-4 rounded-4"
-                            style="background: rgba(99, 102, 241, 0.05); border: 1px dashed rgba(99, 102, 241, 0.2);">
+                            style="background: var(--glass); border: 1px dashed var(--glass-border);">
                             <div class="d-flex align-items-center justify-content-between flex-wrap gap-3">
                                 <div>
-                                    <h5 class="mb-1 text-white">Need a quick answer?</h5>
+                                    <h5 class="mb-1 text-main">Need a quick answer?</h5>
                                     <p class="mb-0 text-muted small">Available now on WhatsApp for rapid consultation.
                                     </p>
                                 </div>
-                                <a href="#" class="btn btn-outline-light rounded-pill px-4 btn-sm">Chat Now</a>
+                                <a href="#" class="btn btn-premium btn-sm">Chat Now</a>
                             </div>
                         </div>
                     </div>

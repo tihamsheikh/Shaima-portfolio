@@ -5,24 +5,39 @@
 }
 
 :root {
-    --primary: #6366f1;
-    --primary-hover: #4f46e5;
-    --bg-dark: #0f172a;
-    --bg-darker: #020617;
-    --text-main: #f8fafc;
-    --text-muted: #94a3b8;
-    --glass: rgba(255, 255, 255, 0.03);
-    --glass-border: rgba(255, 255, 255, 0.1);
-    --accent: #f43f5e;
-    --shadow-premium: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+--primary: #6366f1;
+--primary-hover: #4f46e5;
+--bg-body: #0f172a;
+--bg-body-rgb: 15,
+23,
+42;
+--bg-card: rgba(2, 6, 23, 0.7);
+--text-main: #f8fafc;
+--text-muted: #94a3b8;
+--glass: rgba(255, 255, 255, 0.03);
+--glass-border: rgba(255, 255, 255, 0.1);
+--accent: #f43f5e;
+--shadow-premium: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="light"] {
+    --bg-body: #f8fafc;
+    --bg-body-rgb: 248, 250, 252;
+    --bg-card: rgba(255, 255, 255, 0.7);
+    --text-main: #0f172a;
+    --text-muted: #475569;
+    --glass: rgba(255, 255, 255, 0.6);
+    --glass-border: rgba(0, 0, 0, 0.05);
+    --shadow-premium: 0 20px 40px -10px rgba(0, 0, 0, 0.1);
 }
 
 body {
-    background-color: var(--bg-dark);
+    background-color: var(--bg-body);
     color: var(--text-main);
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
     overflow-x: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 h1,
@@ -60,7 +75,7 @@ h3,
     font-size: 1.8rem;
     font-weight: 700;
     letter-spacing: -0.5px;
-    background: linear-gradient(to right, #fff, var(--primary));
+    background: linear-gradient(to right, var(--text-main), var(--primary));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -130,7 +145,7 @@ h3,
 }
 
 .text-gradient {
-    background: linear-gradient(135deg, #fff 0%, var(--primary) 100%);
+    background: linear-gradient(135deg, var(--text-main) 0%, var(--primary) 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -157,7 +172,7 @@ h3,
 
 .btn-premium-outline {
     background: transparent;
-    color: white;
+    color: var(--text-main);
     padding: 0.8rem 2rem;
     border-radius: 50px;
     font-weight: 600;
@@ -166,10 +181,10 @@ h3,
 }
 
 .btn-premium-outline:hover {
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--glass);
     border-color: var(--primary);
     transform: translateY(-2px);
-    color: white;
+    color: var(--text-main);
 }
 
 /* Card Styling */
@@ -252,19 +267,19 @@ footer {
 }
 
 .form-control {
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--glass);
     border: 1px solid var(--glass-border);
-    color: white;
+    color: var(--text-main);
     border-radius: 12px;
     padding: 12px 20px;
     transition: all 0.3s ease;
 }
 
 .form-control:focus {
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--glass);
     border-color: var(--primary);
     box-shadow: 0 0 0 0.25rem rgba(99, 102, 241, 0.25);
-    color: white;
+    color: var(--text-main);
 }
 
 .form-label {
@@ -297,7 +312,7 @@ footer {
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
-    color: white;
+    color: var(--text-main);
     text-decoration: none;
 }
 
@@ -316,4 +331,59 @@ footer {
 .left-contact-section a {
     text-decoration: none;
     color: #ffffffbc;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    background: var(--glass);
+    border: 1px solid var(--glass-border);
+    color: var(--text-main);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 1rem;
+}
+
+.theme-toggle:hover {
+    background: var(--primary);
+    color: white;
+    transform: rotate(15deg);
+}
+
+.theme-toggle i {
+    font-size: 1.2rem;
+}
+
+/* Adjustments for light mode */
+[data-theme="light"] .glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-color: rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="light"] .navbar-dark .navbar-toggler-icon {
+    filter: invert(1);
+}
+
+[data-theme="light"] .text-white-50 {
+    color: var(--text-muted) !important;
+}
+
+[data-theme="light"] .text-white {
+    color: var(--text-main) !important;
+}
+
+[data-theme="light"] footer p {
+    color: var(--text-main) !important;
+}
+
+[data-theme="light"] .card {
+    background: white;
+    border-color: rgba(0, 0, 0, 0.05);
 }
